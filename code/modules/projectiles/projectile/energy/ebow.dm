@@ -1,15 +1,12 @@
-/obj/item/projectile/energy/bolt //ebow bolts
-	name = "bolt"
-	icon_state = "cbbolt"
-	damage = 8
-	damage_type = TOX
-	nodamage = 0
-	knockdown = 100
-	stutter = 5
+/obj/item/ammo_casing/energy/bolt
+	projectile_type = /obj/item/projectile/energy/bolt
+	select_name = "bolt"
+	e_cost = 500
+	fire_sound = 'sound/weapons/genhit.ogg'
 
-/obj/item/projectile/energy/bolt/halloween
-	name = "candy corn"
-	icon_state = "candy_corn"
+/obj/item/ammo_casing/energy/bolt/halloween
+	projectile_type = /obj/item/projectile/energy/bolt/halloween
 
-/obj/item/projectile/energy/bolt/large
-	damage = 20
+/obj/item/ammo_casing/energy/bolt/large
+	projectile_type = /obj/item/projectile/energy/bolt/large
+	select_name = "heavy bolt"
