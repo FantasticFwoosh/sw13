@@ -660,7 +660,7 @@
 /obj/item/projectile/beam/plasma
 	name = "plasma"
 	damage = 35
-	irradiate = 4
+	irradiate = 0
 	icon_state = "plasma"
 	icon = 'icons/fallout/objects/guns/projectiles.dmi'
 	impact_effect_type = /obj/effect/overlay/temp/impact_effect/plasma
