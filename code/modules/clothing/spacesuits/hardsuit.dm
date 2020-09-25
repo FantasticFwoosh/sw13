@@ -817,6 +817,33 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_HELM_MAX_TEMP_PROTECT
 	actions_types = list()
 
+///Republic Version
+/obj/item/clothing/suit/space/hardsuit/shielded/republic
+	name = "Republic Enforcer Armour"
+	desc = "Fitted with a basic shield-projector, this armour offers some of the best protection an infantryman can get."
+	icon_state = "enforcer"
+	item_state = "swat_suit"
+	max_charges = 4
+	current_charges = 4
+	recharge_delay = 15
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	strip_delay = 130
+	max_heat_protection_temperature = FIRE_IMMUNITY_SUIT_MAX_TEMP_PROTECT
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/shielded/swat
+	dog_fashion = /datum/dog_fashion/back/deathsquad
+
+/obj/item/clothing/head/helmet/space/hardsuit/shielded/republic
+	name = "Republic Enforcer Helmet"
+	desc = "A resistant helmet issued to New Republic Enforcers."
+	icon_state = "enforcer"
+	item_state = "deathsquad"
+	item_color = "syndi"
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 50, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	strip_delay = 130
+	max_heat_protection_temperature = FIRE_IMMUNITY_HELM_MAX_TEMP_PROTECT
+	actions_types = list()
+
+
 
 ///////////////////////
 //////POWER ARMOR//////

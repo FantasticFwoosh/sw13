@@ -947,9 +947,11 @@
 		if (extinguishes_left == 5)
 			to_chat(user, "<span class='notice'>The inbuilt extinguisher is full.</span>")
 			return
-		extinguishes_left = 5
-		to_chat(user, "<span class='notice'>You refill the suit's built-in extinguisher, using up the cartridge.</span>")
-		qdel(E)
+		else
+			extinguishes_left = 5
+			to_chat(user, "<span class='notice'>You refill the suit's built-in extinguisher, using up the cartridge.</span>")
+			qdel(E)
+			return
 		return
 	return
 

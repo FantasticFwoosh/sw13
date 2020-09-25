@@ -755,7 +755,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/flightsuit
 	name = "flight suit"
-	desc = "An advanced suit that allows the wearer flight via two high powered miniature jet engines on a deployable back-mounted unit."
+	desc = "A light set of armour with an advanced, retractable Jetpack."
 	icon_state = "flightsuit"
 	item_state = "flightsuit"
 	strip_delay = 30

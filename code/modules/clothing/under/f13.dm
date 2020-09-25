@@ -569,6 +569,22 @@
 	item_color = "bdu"
 	can_adjust = TRUE
 
+/obj/item/clothing/under/f13/swrepcaptain //WalterJe military standarts.
+	name = "Captain's uniform"
+	desc = "A uniform with a badge denoting the rank of captain."
+	icon_state = "captainsuit2"
+	item_state = "captainsuit2"
+	item_color = "captainsuit2"
+	can_adjust = TRUE
+
+/obj/item/clothing/under/f13/swremofficer //WalterJe military standarts.
+	name = "Officer's uniform"
+	desc = "A uniform used by Imperial officers."
+	icon_state = "remofficer"
+	item_state = "remofficer"
+	item_color = "remofficer"
+	can_adjust = TRUE
+
 /obj/item/clothing/under/f13/dbdu
 	name = "desert battle dress uniform"
 	desc = "A military Desert Battle Dress Uniform."
@@ -1091,3 +1107,21 @@
 	desc = "A harness made out of a number of black belts sewn together end on end to form a coiling piece of clothing. A symbol in red has been painted on the front, and a pair of hide pants go with it."
 	icon_state = "raven_harness"
 	item_state = "raven_harness"
+
+/obj/item/clothing/under/f13/spaceship/officer
+	name = "officer uniform"
+	desc = "The insignia on this uniform tells you that this uniform belongs to some sort of officer."
+	icon_state = "spaceship_officer"
+	item_color = "spaceship_officer"
+
+/obj/item/clothing/under/f13/spaceship/remofficer
+	name = "officer uniform"
+	desc = "The uniform of a Remnant Officer."
+	icon_state = "remofficer"
+	item_color = "remofficer"
+
+/obj/item/clothing/under/f13/spaceship/repcaptain
+	name = "Captain's uniform"
+	desc = "The uniform of a Republic Captain."
+	icon_state = "captainsuit2"
+	item_color = "captainsuit2"

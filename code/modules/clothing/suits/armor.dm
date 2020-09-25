@@ -551,6 +551,22 @@
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	armor = list("melee" = 45, "bullet" = 55, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
 
+/obj/item/clothing/suit/armor/f13/Remnantarmor
+	name = "Imperial Remnant Armour"
+	desc = "Standard-issue stormtrooper armour, cheap to produce and durable."
+	icon_state = "Remnant Armour"
+	item_state = "Remnant Armour"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 60, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/Remnantsergeant
+	name = "Imperial Sergeant Armour"
+	desc = "Stormtrooper armour issued to Sergeants."
+	icon_state = "Remnant Sergeant"
+	item_state = "Remnant Armour"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 60, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
+
 /obj/item/clothing/suit/armor/f13/combatmk2ncr
 	name = "combat armor mk2"
 	desc = "An old military grade pre war combat armor, modified to the NCR's standard."
@@ -729,7 +745,6 @@
 	armor = list("melee" = 55, "bullet" = 30, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
 	flags_inv = HIDEJUMPSUIT
 	strip_delay = 40
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear)
 
 /obj/item/clothing/suit/armor/f13/tribe_armor
 	name = "light tribal armor"
@@ -738,7 +753,6 @@
 	item_state = "tribal_armor"
 	body_parts_covered = CHEST|GROIN|ARMS
 	armor = list("melee" = 45, "bullet" = 30, "laser" = 35, "energy" = 25, "bomb" = 25, "bio" = 70, "rad" = 65, "fire" = 80, "acid" = 100)
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear)
 
 /obj/item/clothing/suit/armor/f13/tribe_heavy_armor
 	name = "heavy tribal armor"
@@ -747,7 +761,6 @@
 	item_state = "heavy_tribal_armor"
 	armor = list("melee" = 45, "bullet" = 50, "laser" = 45, "energy" = 45, "bomb" = 55, "bio" = 60, "rad" = 15, "fire" = 60, "acid" = 30)
 	flags_inv = HIDEJUMPSUIT
-	allowed = list(/obj/item/gun, /obj/item/kitchen, /obj/item/twohanded, /obj/item/claymore, /obj/item/twohanded/spear)
 
 /obj/item/clothing/suit/armor/f13/sulphitearmor
 	name = "sulphite armor"
@@ -1131,6 +1144,24 @@
 	armor = list("melee" = 15, "bullet" = 10, "laser" = 15, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	allowed = list(/obj/item/gun)
 
+/obj/item/clothing/suit/armor/f13/Newrepublicarmor
+	name = "New Republic Chestplate"
+	desc = "A New Republic Chestplate, standard issue."
+	icon_state = "New Republic Armor"
+	item_state = "New Republic Armor"
+	body_parts_covered = CHEST
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 35, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	allowed = list(/obj/item/gun)
+
+/obj/item/clothing/suit/armor/f13/Newrepublicsergeantarmor
+	name = "New Republic Sergeant's Chestplate"
+	desc = "A New Republic Chestplate, reinforced and issued to officers."
+	icon_state = "New Republic Sergeant Armor"
+	item_state = "New Republic Sergeant Armor"
+	body_parts_covered = CHEST
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 35, "energy" = 0, "bomb" = 5, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	allowed = list(/obj/item/gun)
+
 /obj/item/clothing/suit/toggle/armor
 	allowed = null
 	body_parts_covered = CHEST
@@ -1195,3 +1226,29 @@
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 15, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 30, "acid" = 0)
 	body_parts_covered = CHEST|GROIN|LEGS|ARMS
 	flags_inv = HIDEJUMPSUIT
+
+/obj/item/clothing/suit/armor/f13/crewmanarmour
+	name = "Crewman Armour"
+	desc = "Standard-issue armour issued to vehicle crews."
+	icon_state = "crewarmour"
+	item_state = "crewarmour"
+	body_parts_covered = CHEST|GROIN|LEGS|ARMS
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 60, "energy" = 45, "bomb" = 55, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
+
+/obj/item/clothing/suit/armor/f13/mcrusade
+	name = "Antique armour"
+	desc = "An old and battered piece of armour that has been collecting dust in a storeroom, only the chestplate remains."
+	icon_state = "mcrusade"
+	item_state = "mcrusade"
+	body_parts_covered = CHEST|GROIN
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 75, "energy" = 75, "bomb" = 68, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
+	icon = 'icons/obj/suits.dmi'
+
+/obj/item/clothing/suit/armor/f13/pdf
+	name = "Gang Armour"
+	desc = "Repurposed from armour issued to a disbanded planetary defence force, this set of armour is often seen being worn by criminals and mercenaries."
+	icon_state = "pdfarmour"
+	item_state = "pdfarmour"
+	body_parts_covered = CHEST|GROIN
+	armor = list("melee" = 45, "bullet" = 55, "laser" = 50, "energy" = 55, "bomb" = 68, "bio" = 65, "rad" = 10, "fire" = 60, "acid" = 20)
+	icon = 'icons/obj/suits.dmi'

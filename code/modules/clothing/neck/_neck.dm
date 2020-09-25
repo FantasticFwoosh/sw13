@@ -219,10 +219,7 @@ GLOBAL_VAR_INIT(collar_number, 0)
 		else
 			to_chat(user, "<span class='warning'>With a click the collar locks!</span>")
 			lock = TRUE
-			if(!ismob(src.loc))
-				return
-			var/mob/M = src.loc
-			if(M.get_item_by_slot(SLOT_NECK) == src)
+			if(SLOT_NECK)
 				item_flags = NODROP
 	return
 

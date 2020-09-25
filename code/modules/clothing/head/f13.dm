@@ -93,27 +93,19 @@
 	desc = "A piece of headwear commonly worn by the Great Khans that appears to resemble stereotypical traditional Mongolian helmets - likely adapted from a pre-War motorcycle helmet.<br>It is black with two horns on either side and a small spike jutting from the top, much like a pickelhaube.<br>A leather covering protects the wearer's neck and ears from sunburn."
 	icon_state = "khan"
 	item_state = "khan"
-	armor = list(melee = 35, bullet = 25, laser = 25, energy = 20, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
+	armor = list(melee = 35, bullet = 25, laser = 20, energy = 20, bomb = 10, bio = 0, rad = 0, fire = 0, acid = 0)
 	flags_inv = HIDEEARS|HIDEHAIR
 	strip_delay = 20
-
-/obj/item/clothing/head/helmet/f13/khan/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/khan/fullhelm
 	name = "Great Khan full helmet"
 	desc = "A Khan helmet modified with steel horns and a full guard comprised of red sunglass lenses and a thick metal plate to conceal the lower face."
 	icon_state = "khanhelmet"
 	item_state = "khanhelmet"
-	armor = list(melee = 35, bullet = 25, laser = 25, energy = 30, bomb = 30, bio = 0, rad = 0, fire = 0, acid = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0, fire = 0, acid = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	strip_delay = 20
-
-/obj/item/clothing/head/helmet/f13/khan/fullhelm/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 
 /obj/item/clothing/head/helmet/f13/ranger/old
@@ -254,6 +246,14 @@
 	item_state = "dethat"
 	armor = list(melee = 40, bullet = 10, laser = 0, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 30, acid = 0)
 
+/obj/item/clothing/head/f13/NewRepublicHelmet
+	name = "New Republic Helmet"
+	desc = "A modernized version of a classic helmet design in use since the Old Republic, this new helmet features an integrated HUD and good blast resistance."
+	icon_state = "New Republic Helmet"
+	item_state = "New Republic Helmet"
+	armor = list(melee = 40, bullet = 10, laser = 20, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 30, acid = 0)
+
+
 /obj/item/clothing/head/f13/chinese_soldier
 	name = "chinese side cap"
 	desc = "A foldable military cap with straight sides, with insignia of People's Liberation Army, that was supposedly worn by regular troops."
@@ -288,10 +288,6 @@
 	icon_state = "headscarf"
 	item_state = "dethat"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
-
-/obj/item/clothing/head/f13/headscarf/Initialize()
-	. = ..()
-	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/f13/pot
 	name = "metal cooking pot"
@@ -435,5 +431,12 @@
 	desc = ""
 	icon_state = "militiacap"
 	item_state = "militiacap"
-	armor = list("melee" = 20, "bullet" = 20, "laser" = 10, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 20, "bullet" = 20, "laser" = 35, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	flags_inv = HIDEHAIR
+
+/obj/item/clothing/head/f13/NewRepublicSergeantHelm
+	name = "New Republic Sergeant's Helmet"
+	desc = "A modernized version of a classic helmet design in use since the Old Republic, this helmet has a red paintjob to symbolize the ideals of the Rebellion and to be easily visible, both for a squad and for the enemy.."
+	icon_state = "newrepublicsergeant"
+	item_state = "newrepublicsergeant"
+	armor = list(melee = 40, bullet = 10, laser = 40, energy = 0, bomb = 20, bio = 0, rad = 0, fire = 30, acid = 0)

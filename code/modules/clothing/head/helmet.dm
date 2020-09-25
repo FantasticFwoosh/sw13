@@ -411,6 +411,20 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 
+/obj/item/clothing/head/helmet/f13/Remnantstormtrooper
+	name = "Stormtrooper Helmet"
+	desc = "An infamous helmet design, used by the stormtroopers of the Galactic Empire and used on by the Imperial Remnant."
+	desc = "An infamous helmet design, used by the stormtroopers of the Galactic Empire and used on by the Imperial Remnant."
+	icon_state = "Remnant Stormtrooper Helmet"
+	item_state = "Remnant Stormtrooper Helmet"
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 60, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	strip_delay = 50
+	flags_inv = HIDEEARS|HIDEHAIR
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+
+
 /obj/item/clothing/head/helmet/f13/combat/dark
 	name = "combat helmet"
 	desc = "An old military grade pre-war combat helmet."
@@ -532,19 +546,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
-//Strange Combat Helm
-
-/obj/item/clothing/head/helmet/f13/rangerbroken
-	name = "broken riot helmet"
-	icon_state = "ranger_broken"
-	desc = "An old riot police helmet, out of use around the time of the war."
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 50, "bomb" = 39, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
-	resistance_flags = LAVA_PROOF | FIRE_PROOF
-	dynamic_hair_suffix = ""
-	dynamic_fhair_suffix = ""
-	flash_protect = 1
 
 //Legion
 /obj/item/clothing/head/helmet/f13/legion
@@ -701,6 +702,11 @@
 	lighting_alpha = LIGHTING_PLANE_ALPHA_LOWLIGHT_VISION
 	darkness_view = 128
 
+/obj/item/clothing/head/helmet/f13/ncr/rangercombat/riotpolice
+	name = "strange combat helmet"
+	desc = "An old riot police helmet, out of use around the time of the war."
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 40, "energy" = 50, "bomb" = 39, "bio" = 20, "rad" = 20, "fire" = 30, "acid" = 0)
+
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
 	name = "desert ranger combat helmet"
 	desc = "An U.S Marine Corps helmet, used by the legendary Desert Rangers."
@@ -722,8 +728,7 @@
 	icon_state = "desert_ranger"
 	item_state = "desert_ranger"
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 30, "bomb" = 30, "bio" = 30, "rad" = 30, "fire" = 30, "acid" = 0)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
-	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+
 //Metal masks
 
 /obj/item/clothing/head/helmet/f13/raidermetal
@@ -804,9 +809,9 @@
 	flash_protect = 2
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
-	speechspan = SPAN_ROBOT //makes you sound like a robot
 	darkness_view = 128
 	lighting_alpha = LIGHTING_PLANE_ALPHA_LOWLIGHT_VISION
+	speechspan = SPAN_ROBOT //makes you sound like a robot
 	var/emped = 0
 	var/requires_training = TRUE
 
@@ -1014,3 +1019,41 @@
 	for(var/X in actions)
 		var/datum/action/A = X
 		A.UpdateButtonIcon()
+
+/obj/item/clothing/head/helmet/f13/vehiclecrew
+	name = "Crewman Helm"
+	desc = "A lightweight helmet design, issued to Remnant vehicle crews."
+	desc = "A lightweight helmet design, issued to Remnant vehicle crews."
+	icon_state = "crewhelmet"
+	item_state = "crewhelmet"
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 45, "energy" = 40, "bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	strip_delay = 50
+	flags_inv = HIDEEARS|HIDEHAIR
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+
+/obj/item/clothing/head/helmet/f13/mcrusade
+	name = "Antique Helmet"
+	desc = "The visor glitches when you try to turn it on, and there are minor cracks in it. Still, it's armour, and well-built at that."
+	desc = "An infamous helmet design, used by the stormtroopers of the Galactic Empire and used on by the Imperial Remnant."
+	icon_state = "mcrusade"
+	item_state = "mcrusade"
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 60, "energy" = 75,"bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	strip_delay = 50
+	flags_inv = HIDEEARS|HIDEHAIR
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+
+/obj/item/clothing/head/helmet/f13/pdf
+	name = "PDF Helmet"
+	desc = "Repurposed from armour issued to a disbanded planetary defence force, this set of armour is often seen being worn by criminals and mercenaries."
+	icon_state = "pdfhelmet"
+	item_state = "pdfhelmet"
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 60, "energy" = 75,"bomb" = 50, "bio" = 60, "rad" = 10, "fire" = 60, "acid" = 20)
+	strip_delay = 50
+	flags_inv = HIDEEARS|HIDEHAIR
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
